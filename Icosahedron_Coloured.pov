@@ -173,7 +173,6 @@ global_settings { assumed_gamma 1.0 }
 
 #declare RegularIcosahedronFrame =
     union {
-
         object {
             QuadrilateralVertices(pXY0, pXY1, pXY2, pXY3, RadiusSph)
             pigment { color 3*Rd }
