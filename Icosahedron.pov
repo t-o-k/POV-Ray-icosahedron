@@ -58,7 +58,7 @@ global_settings { assumed_gamma 1.0 }
         sphere { p2, R }
     }
 
-#end // macro TriangleEdges
+#end // macro TriangleVertices
 
 
 #macro QuadrilateralEdges(p0, p1, p2, p3, R)
