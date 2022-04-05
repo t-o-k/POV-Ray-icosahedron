@@ -4,6 +4,9 @@ POV-Ray scene files for rendering convex regular icosahedrons
 [Source code](Icosahedron_With_Internal_Rectangles.pov)\
 ![Icosahedron with internal rectangles](Icosahedron_With_Internal_Rectangles.png)
 
+[Source code](Triangle_Arrows_Clockwise.pov)\
+![Triangle with clockwise arrows](Triangle_Arrows_Clockwise.png)
+
 [Source code](Icosahedron_Vertex_Order_Check.pov)\
 ![Icosahedron with vertex order check](Icosahedron_Vertex_Order_Check.png)
 
