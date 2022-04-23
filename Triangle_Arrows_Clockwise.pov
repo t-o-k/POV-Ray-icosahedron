@@ -212,10 +212,11 @@ default {
         linear_spline
         -1,
         +1,
-        3,
-        <cos(-5/6*pi), sin(-5/6*pi)>,
+        4,
         <cos(+3/6*pi), sin(+3/6*pi)>,
-        <cos(-1/6*pi), sin(-1/6*pi)>
+        <cos(-1/6*pi), sin(-1/6*pi)>,
+        <cos(-5/6*pi), sin(-5/6*pi)>,
+        <cos(+3/6*pi), sin(+3/6*pi)>
     }
 
 #declare DX1 = 470;  // 2*470 = 940
