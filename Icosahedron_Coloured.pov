@@ -134,7 +134,7 @@ global_settings { assumed_gamma 1.0 }
 
 // ===== 1 ======= 2 ======= 3 ======= 4 ======= 5 ======= 6 ======= 7
 
-// Golden Ratio
+// The Golden Ratio
 
 //   0 < B < A
 //   A/B = (A + B)/A
