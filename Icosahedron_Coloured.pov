@@ -26,6 +26,41 @@ global_settings { assumed_gamma 1.0 }
 #declare Wh = color rgb <1, 1, 1>;
 
 // ===== 1 ======= 2 ======= 3 ======= 4 ======= 5 ======= 6 ======= 7
+// Some macros from vectors.inc, which can be found here:
+// https://github.com/t-o-k/Useful-POV-Ray-macros
+
+#macro TransformFromVectors(vX, vY, vZ, pT)
+
+    transform {
+        matrix <
+            vX.x, vX.y, vX.z,
+            vY.x, vY.y, vY.z,
+            vZ.x, vZ.y, vZ.z,
+            pT.x, pT.y, pT.z
+        >
+    }
+
+#end // macro TransformFromVectors
+
+
+#macro ReorientTransform(vFrom, vTo)
+
+    #local vF = vnormalize(vFrom);
+    #local vT = vnormalize(vTo);
+    #local vAxis = vcross(vF, vT);
+    #local Dot = min(max(-1, vdot(vF, vT)), +1);
+    #local Angle = degrees(acos(Dot));
+
+    TransformFromVectors(
+        vaxis_rotate(x, vAxis, Angle),
+        vaxis_rotate(y, vAxis, Angle),
+        vaxis_rotate(z, vAxis, Angle),
+        <0, 0, 0>
+    )
+
+#end // macro ReorientTransform
+
+// ===== 1 ======= 2 ======= 3 ======= 4 ======= 5 ======= 6 ======= 7
 
 #macro TexturedTriangle(S, p0, p1, p2, T1, T2, T3)
 
@@ -96,38 +131,6 @@ global_settings { assumed_gamma 1.0 }
     }
 
 #end // macro QuadrilateralVertices
-
-
-#macro TransformFromVectors(vX, vY, vZ, pT)
-
-    transform {
-        matrix <
-            vX.x, vX.y, vX.z,
-            vY.x, vY.y, vY.z,
-            vZ.x, vZ.y, vZ.z,
-            pT.x, pT.y, pT.z
-        >
-    }
-
-#end // macro TransformFromVectors
-
-
-#macro ReorientTransform(vFrom, vTo)
-
-    #local vF = vnormalize(vFrom);
-    #local vT = vnormalize(vTo);
-    #local vAxis = vcross(vF, vT);
-    #local Dot = min(max(-1, vdot(vF, vT)), +1);
-    #local Angle = degrees(acos(Dot));
-
-    TransformFromVectors(
-        vaxis_rotate(x, vAxis, Angle),
-        vaxis_rotate(y, vAxis, Angle),
-        vaxis_rotate(z, vAxis, Angle),
-        <0, 0, 0>
-    )
-
-#end // macro ReorientTransform
 
 // ===== 1 ======= 2 ======= 3 ======= 4 ======= 5 ======= 6 ======= 7
 
