@@ -290,7 +290,7 @@ camera {
 text {
     ttf "timrom.ttf" URL 1e-6, 0
     texture {
-    pigment { color (2*Bu + 1*Gn)/7 }
+        pigment { color (2*Bu + 1*Gn)/7 }
         finish {
             diffuse 0
             emission color Wh
