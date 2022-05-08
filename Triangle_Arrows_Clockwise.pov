@@ -38,13 +38,13 @@ default {
 
 // ===== 1 ======= 2 ======= 3 ======= 4 ======= 5 ======= 6 ======= 7
 
-#macro ObjectPigment(Object, ColorInside, ColorOutside)
+#macro ObjectPigment(Object, ColorOutside, ColorInside)
 
     pigment {
         object {
             Object
-            color ColorInside
             color ColorOutside
+            color ColorInside
         }
     }
 
