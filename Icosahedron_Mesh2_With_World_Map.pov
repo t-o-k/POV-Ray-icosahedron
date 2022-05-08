@@ -356,7 +356,7 @@ default {
 #declare MapPigment = 
     pigment {
         image_map {
-            png "IcosahedralWorldMap.png"
+            png "Icosahedral_World_Map.png"
             map_type 0  // planar
             interpolate 2  // bilinear
             once
