@@ -15,8 +15,8 @@ POV-Ray scene files for rendering convex regular icosahedrons
 [Source code](Icosahedron_Coloured.pov)\
 ![Coloured icosahedron](Icosahedron_Coloured.png)
 
-[Source code](Triangle_Arrows_Clockwise.pov)\
-![Triangle with clockwise arrows](Triangle_Arrows_Clockwise.png)
-
 [Source code](Icosahedron_Vertex_Order_Check.pov)\
 ![Icosahedron with vertex order check](Icosahedron_Vertex_Order_Check.png)
+
+[Source code](Triangle_Arrows_Clockwise.pov)\
+![Triangle with clockwise arrows](Triangle_Arrows_Clockwise.png)
