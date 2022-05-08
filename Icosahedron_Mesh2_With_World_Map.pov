@@ -174,19 +174,21 @@ default {
 #declare C = A/2;
 #declare D = (A + B)/2;
 
-// ZX-plane
+// Vertices for 3 Golden Rectangles
+
+// Rectangle vertices in the ZX-plane
 #declare pY0 = <-D,  0, -C>;
 #declare pY1 = <-D,  0, +C>;
 #declare pY2 = <+D,  0, +C>;
 #declare pY3 = <+D,  0, -C>;
 
-// XY-plane
+// Rectangle vertices in the XY-plane
 #declare pZ0 = <-C, -D,  0>;
 #declare pZ1 = <+C, -D,  0>;
 #declare pZ2 = <+C, +D,  0>;
 #declare pZ3 = <-C, +D,  0>;
 
-// YZ-plane
+// Rectangle vertices in the YZ-plane
 #declare pX0 = < 0, -C, -D>;
 #declare pX1 = < 0, +C, -D>;
 #declare pX2 = < 0, +C, +D>;
