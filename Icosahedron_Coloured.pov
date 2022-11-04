@@ -62,7 +62,7 @@ global_settings { assumed_gamma 1.0 }
 
 // ===== 1 ======= 2 ======= 3 ======= 4 ======= 5 ======= 6 ======= 7
 
-#macro TexturedTriangle(S, p0, p1, p2, T1, T2, T3)
+#macro TexturedTriangle(S, p0, p1, p2, T0, T1, T2)
 
     #local pCtr = (p0 + p1 + p2)/3;
 
@@ -73,9 +73,9 @@ global_settings { assumed_gamma 1.0 }
         }
         texture_list {
             3,
+            texture { T0 },
             texture { T1 },
-            texture { T2 },
-            texture { T3 }
+            texture { T2 }
         }
         face_indices {
             1,
